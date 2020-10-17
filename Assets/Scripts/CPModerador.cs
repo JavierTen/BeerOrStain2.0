@@ -9,7 +9,7 @@ public class CPModerador : MonoBehaviour
 {
     private MySqlConnection conexion;
     private MySqlCommand consola;
-    public float timeRemaining = 3;
+    public float timeRemaining = 5;
     private bool gamerunning;
     public Text texto;
     public GameObject Mensaje;
@@ -67,7 +67,7 @@ public class CPModerador : MonoBehaviour
                     transform.localScale = new Vector3(0.2156625f, 0.2178207f, 1f);
 
                 }
-                timeRemaining = 20;
+                timeRemaining = 10;
             }
         }
     }
