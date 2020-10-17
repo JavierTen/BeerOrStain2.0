@@ -11,7 +11,10 @@ public class CPModerador : MonoBehaviour
     private MySqlCommand consola;
     public float timeRemaining = 3;
     private bool gamerunning;
+    public Text texto;
+    public GameObject Mensaje;
     int item = 0;
+    private int click = 0;
     ArrayList cartasPiramide = new ArrayList();
 
     private SpriteRenderer rend;
@@ -92,5 +95,18 @@ public class CPModerador : MonoBehaviour
     public void ChangeGameRunningState()
     {
         gamerunning = !gamerunning;
+        if (click == 0)
+        {
+            texto.text = "CONTINUAR";
+            click = +1;
+        }
+        else
+        {
+            texto.text = "PAUSAR";
+            Mensaje.SetActive(false);
+            click = 0;
+
+        }
+
     }
 }
