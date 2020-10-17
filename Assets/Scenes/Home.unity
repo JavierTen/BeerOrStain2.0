@@ -949,38 +949,37 @@ MonoBehaviour:
     m_LineSpacing: 1.3
   m_Text: "BIENVENIDO A BEER OR STAIN!!!\nLas reglas de juego son simples.\nLo m\xE1s
     importante es estar dispuesto a divertirse y embriagarse obviamente.\nPrimero
-    que nada, necesitas entre 5 y 20 personas para que la partida sea m\xE1s interesante
+    que nada, necesitas entre 5 y 14 personas para que la partida sea m\xE1s interesante
     y obviamente una botella de licor, no olvides re\xFAnir a todas las personas
-    alrededor de una mesa. \nAl iniciar el juego algunas cartas est\xE1n organizadas
-    boca abajo formando una pir\xE1mide y se distribuir\xE1n cartas a los dem\xE1s
-    jugadores. \n\xA1Y que comience el juego!\nCada turno, se da vuelta una carta.
-    Cada carta representa una acci\xF3n. Cuando se da vuelta una carta, cada jugador
-    busca en su baraja si tiene la pareja de la carta y ejecuta la acci\xF3n asignada.\nLa
-    base de la pir\xE1mide es el nivel uno, en donde se comienza con un shot nivel
-    dos, dos shots y as\xED sucesivamente hasta la punta de la pir\xE1mide, al revelarse
-    la carta los jugadores, revisan su baraja y quien tenga la pareja podr\xE1 regalar
-    un shot a uno de los jugadores, puede hacer esto si la carta es un n\xFAmero,
-    de lo contrario deber\xE1 seguir las reglas de la carta correspondiente.\nLa
-    carta anular, el jugador que reciba el regalo del shot de parte de otro, y tenga
-    esta carta tendr\xE1 la posibilidad de no recibir el regalo y pasar de sano.\nLa
-    carta karma, el jugador que reciba el regalo del shot de parte de otro, y tenga
-    esta carta, tendr\xE1 la posibilidad de devolverle el regalo y el emisor tendr\xE1
-    que aceptar su karma por pato y realizar la actividad.\nRegla Malu, el jugador
-    que tenga la carta activa la regla Malu cuando desee, la cual consiste en, cada
-    oraci\xF3n que vaya a decir debe comenzar con POLA y terminar con MANCHA (Ejemplo:
-    POLA si no bebe el regalo que le di le toca beber el triple MANCHA). Si un jugador
-    olvida decir esas palabras, debe beber. (Dura hasta que el primer jugador pierda.)\nRegla
-    Javier, el jugador que reciba la carta deber\xE1 lamerle el cachete al jugador
-    que decida el emisor y si no lo hace deber\xE1 beber 3 shots.\nRegla Camilo,
-    el jugador que tenga la carta, activa la regla de Camilo, la cual consiste en,
-    el \xFAltimo que toca la mesa con la frente tiene que beber. Cuanto m\xE1s borrachos
-    se encuentren los jugadores, mejor ser\xE1 esta regla. Despu\xE9s del primer
-    totazo esta regla debe ser levantada. \xA1Porfa no olvides cuidar a tus amigos!
-    Y poner hielo en la cabeza para que no salga chich\xF3n.\nCarta Verdad, si el
-    jugador recibe esta carta de parte de otro jugador, deber\xE1 responder una pregunta
-    aleatoria. Si no responde deber\xE1 beber.\nCarta Reto, si el jugador recibe
-    esta carta de parte de otro jugador, deber\xE1 realizar un reto aleatorio. Si
-    no lo hace deber\xE1 beber."
+    alrededor de una mesa. \n\xA1Y que comience el juego!\nCada turno, se gira una
+    carta. Cada carta representa una acci\xF3n. Cuando se da vuelta una carta, cada
+    jugador busca en su baraja si tiene la pareja de la carta y ejecuta la acci\xF3n
+    asignada.\nAl revelarse la carta los jugadores, revisan su baraja y quien tenga
+    la pareja podr\xE1 regalar un shot a uno de los jugadores (ustedes deciden la
+    cantidad de shots que deseen regalar a medida que avance la partida), puede hacer
+    esto si la carta es un n\xFAmero, de lo contrario deber\xE1 seguir las reglas
+    de la carta correspondiente.\nLa carta anular, el jugador que reciba el regalo
+    del shot de parte de otro, y tenga esta carta tendr\xE1 la posibilidad de no
+    recibir el regalo y pasar de sano.\nLa carta karma, el jugador que reciba el
+    regalo del shot de parte de otro, y tenga esta carta, tendr\xE1 la posibilidad
+    de devolverle el regalo y el emisor tendr\xE1 que aceptar su karma por pato y
+    realizar la actividad.\nRegla Malu, el jugador que tenga la carta activa la regla
+    Malu cuando desee, la cual consiste en, cada oraci\xF3n que vaya a decir debe
+    comenzar con POLA y terminar con MANCHA (Ejemplo: POLA si no bebe el regalo que
+    le di le toca beber el triple MANCHA). Si un jugador olvida decir esas palabras,
+    debe beber. (Dura hasta que el primer jugador pierda.)\nRegla Javier, el jugador
+    que reciba la carta deber\xE1 lamerle el cachete al jugador que decida el emisor
+    y si no lo hace deber\xE1 beber 3 shots.\nRegla Camilo, el jugador que tenga
+    la carta, activa la regla de Camilo, la cual consiste en, el \xFAltimo que toca
+    la mesa con la frente tiene que beber. Cuanto m\xE1s borrachos se encuentren
+    los jugadores, mejor ser\xE1 esta regla. Despu\xE9s del primer totazo esta regla
+    debe ser levantada. \xA1Porfa no olvides cuidar a tus amigos! Y poner hielo en
+    la cabeza para que no salga chich\xF3n.\nCarta Verdad, si el jugador recibe esta
+    carta de parte de otro jugador, deber\xE1 responder una pregunta aleatoria. Si
+    no responde deber\xE1 beber.\nCarta Reto, si el jugador recibe esta carta de
+    parte de otro jugador, deber\xE1 realizar un reto aleatorio. Si no lo hace deber\xE1
+    beber.\nYa que entendieron las reglas del juego, esperamos se diviertan y se
+    embriaguen.\n\xA1A JUGAR Y A BEBER SE DIJO! O VAN A MANCHAR?"
 --- !u!222 &878800900
 CanvasRenderer:
   m_ObjectHideFlags: 0
