@@ -98,12 +98,12 @@ public class CPModerador : MonoBehaviour
         if (click == 0)
         {
             texto.text = "CONTINUAR";
+            Mensaje.SetActive(false);
             click = +1;
         }
         else
         {
-            texto.text = "PAUSAR";
-            Mensaje.SetActive(false);
+            texto.text = "PAUSAR";       
             click = 0;
 
         }
