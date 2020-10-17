@@ -13,6 +13,8 @@ public class RMPJuego : MonoBehaviour
     public GameObject Mensaje;
     public float timeRemaining = 0.5f;
     private bool gamerunning;
+    string idNuevo = "";
+    string idAntiguo = "";
     void Update()
     {
         if (!gamerunning)
@@ -33,8 +35,7 @@ public class RMPJuego : MonoBehaviour
                     conexion = new MySqlConnection(DataConecction);
                     consola = new MySqlCommand(Query, conexion);
 
-                    string idNuevo = "";
-                    string idAntiguo = "";
+                    
 
                     conexion.Open();
                     MySqlDataReader reader = consola.ExecuteReader();
