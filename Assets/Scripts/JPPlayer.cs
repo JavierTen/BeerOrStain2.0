@@ -9,7 +9,7 @@ public class JPPlayer : MonoBehaviour
 {
     private MySqlConnection conexion;
     private MySqlCommand consola;
-    public Vector2 pos;
+
     ArrayList cartasPiramide = new ArrayList();
     public GameObject boton;
     public Text nombre;
@@ -28,8 +28,7 @@ public class JPPlayer : MonoBehaviour
             while (reader.Read())
             {            
                 nombre.text = reader["nombre"].ToString(); 
-                Instantiate(boton);
-                transform.position = pos;                     
+                Instantiate(boton);                     
             }
             conexion.Close();
         }

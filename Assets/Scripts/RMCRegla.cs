@@ -35,8 +35,7 @@ private MySqlConnection conexion;
                 {
 
                     string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-                    string Query = "SELECT * FROM bosdb.rcregla WHERE idPartida = " + DatosGlobales.IdPartida + " ORDER BY idrcRegla DESC LIMIT 1;";
-
+                    string Query = "SELECT * FROM bosdb.rcregla WHERE idPartida = " + DatosGlobales.IdPartida + " ORDER BY idjugadortcarta DESC LIMIT 1;";
 
                     conexion = new MySqlConnection(DataConecction);
                     consola = new MySqlCommand(Query, conexion);
@@ -47,7 +46,7 @@ private MySqlConnection conexion;
                     MySqlDataReader reader = consola.ExecuteReader();
                     while (reader.Read())
                     {
-                        idNuevo = reader["idrcRegla"].ToString();
+                        idNuevo = reader["idjugadortcarta"].ToString();
                         idJugador = reader["idJugador"].ToString();
                         cartaRegla = reader["carta"].ToString();
                         
