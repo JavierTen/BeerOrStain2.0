@@ -10,11 +10,16 @@ public class RMPJuego : MonoBehaviour
 
     private MySqlConnection conexion;
     private MySqlCommand consola;
+    private MySqlConnection conexion2;
+    private MySqlCommand consola2;
     public GameObject Mensaje;
+    public Text textoMensaje;
     public float timeRemaining = 0.5f;
     private bool gamerunning;
     string idNuevo = "";
     string idAntiguo = "";
+    string idJugador = "0";
+    string nombreJugador = "";
     void Update()
     {
         if (!gamerunning)
@@ -30,23 +35,40 @@ public class RMPJuego : MonoBehaviour
                 {
 
                     string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-                    string Query = "SELECT * FROM bosdb.jugadortcarta WHERE idPartida = "+DatosGlobales.IdPartida+" ORDER BY idjugadortcarta DESC LIMIT 1;";
+                    string Query = "SELECT * FROM bosdb.jugadortcarta WHERE idPartida = " + DatosGlobales.IdPartida + " ORDER BY idjugadortcarta DESC LIMIT 1;";
 
                     conexion = new MySqlConnection(DataConecction);
                     consola = new MySqlCommand(Query, conexion);
 
-                    
+
 
                     conexion.Open();
                     MySqlDataReader reader = consola.ExecuteReader();
                     while (reader.Read())
                     {
                         idNuevo = reader["idjugadortcarta"].ToString();
+                        idJugador = reader["idJugador"].ToString();
                     }
                     if (idNuevo != "")
                     {
-                        if(idNuevo != idAntiguo ){
+                        if (idNuevo != idAntiguo)
+                        {
                             idAntiguo = idNuevo;
+
+                            string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
+                            string Query = "SELECT * FROM bosdb.jugador WHERE idJugador = "+idJugador+"";
+
+                            conexion = new MySqlConnection(DataConecction);
+                            consola = new MySqlCommand(Query, conexion);
+
+                            conexion.Open();
+                            MySqlDataReader reader = consola.ExecuteReader();
+                            while (reader.Read())
+                            {
+                                nombreJugador = reader["nombre"].ToString();
+                            }
+
+                            textoMensaje.text = "¡"+nombreJugador+ "tiene la carta actaul!";
                             Mensaje.SetActive(true);
                         }
                     }
