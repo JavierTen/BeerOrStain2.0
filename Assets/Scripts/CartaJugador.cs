@@ -89,24 +89,7 @@ public class CartaJugador : MonoBehaviour
 
         if (cartasJugador[nCarta].ToString() == "RegA0" || cartasJugador[nCarta].ToString() == "RegA1" || cartasJugador[nCarta].ToString() == "RegA2" || cartasJugador[nCarta].ToString() == "RegC0" || cartasJugador[nCarta].ToString() == "RegC1" || cartasJugador[nCarta].ToString() == "RegC2" || cartasJugador[nCarta].ToString() == "RegJ0" || cartasJugador[nCarta].ToString() == "RegJ1" || cartasJugador[nCarta].ToString() == "RegJ2" || cartasJugador[nCarta].ToString() == "RegK0" || cartasJugador[nCarta].ToString() == "RegK1" || cartasJugador[nCarta].ToString() == "RegK2" || cartasJugador[nCarta].ToString() == "RegM0" || cartasJugador[nCarta].ToString() == "RegM1" || cartasJugador[nCarta].ToString() == "RegM2" || cartasJugador[nCarta].ToString() == "RegN0" || cartasJugador[nCarta].ToString() == "RegP0" || cartasJugador[nCarta].ToString() == "RegP1" || cartasJugador[nCarta].ToString() == "RegP2" || cartasJugador[nCarta].ToString() == "RegR0" || cartasJugador[nCarta].ToString() == "RegR1" || cartasJugador[nCarta].ToString() == "RegR2" || cartasJugador[nCarta].ToString() == "RegU0" || cartasJugador[nCarta].ToString() == "RegU1" || cartasJugador[nCarta].ToString() == "RegU2" || cartasJugador[nCarta].ToString() == "RegV0" || cartasJugador[nCarta].ToString() == "RegV1" || cartasJugador[nCarta].ToString() == "RegV2")
         {
-            try
-            {
-                string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-                string Query = "INSERT INTO bosdb.jugadortcarta(carta, idJugador, idPartida) VALUES ('" + cartasJugador[nCarta].ToString() + "'," + DatosGlobales.IdPartida + "," + DatosGlobales.IdJugador + ");";
-
-                conexion = new MySqlConnection(DataConecction);
-                consola = new MySqlCommand(Query, conexion);
-
-                conexion.Open();
-                consola.ExecuteReader();
-                conexion.Close();
-
-            }
-            catch (MySqlException ex)
-            {
-
-                Debug.LogError("Error: " + ex);
-            }
+            Regla();
             GetComponent<Button>().interactable = false;
         }
     }
@@ -117,8 +100,7 @@ public class CartaJugador : MonoBehaviour
         try
         {
             string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-            string Query = "INSERT INTO bosdb.jugadortcarta(carta, idJugador, idPartida) VALUES ('" + cartasJugador[nCarta].ToString() + "'," + DatosGlobales.IdPartida + "," + DatosGlobales.IdJugador + ");";
-
+            string Query = "INSERT INTO bosdb.jugadortcarta(carta, idJugador, idPartida) VALUES('" + cartasJugador[nCarta].ToString() + "'," + DatosGlobales.IdJugador + "," + DatosGlobales.IdPartida + ");";
             conexion = new MySqlConnection(DataConecction);
             consola = new MySqlCommand(Query, conexion);
 
