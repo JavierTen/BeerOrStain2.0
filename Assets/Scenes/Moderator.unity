@@ -773,6 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mensaje: {fileID: 244152478}
+  textoMensaje: {fileID: 689017845}
   timeRemaining: 0.5
 --- !u!4 &1590933561
 Transform:
