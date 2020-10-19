@@ -12,6 +12,7 @@ public class CPModerador : MonoBehaviour
     public float timeRemaining = 5;
     private bool gamerunning;
     public Text texto;
+    public Text textoMensaje;
     public GameObject Mensaje;
     int item = 0;
     private int click = 0;
@@ -67,7 +68,11 @@ public class CPModerador : MonoBehaviour
                     transform.localScale = new Vector3(0.2156625f, 0.2178207f, 1f);
 
                 }
-                timeRemaining = 10;
+                if (item == 16)
+                {
+                    textoMensaje.text = "¡A finalizado el juego!";
+                }
+                timeRemaining = 4;
             }
         }
     }
@@ -98,11 +103,13 @@ public class CPModerador : MonoBehaviour
         if (click == 0)
         {
             texto.text = "CONTINUAR";
+            
             click = +1;
         }
         else
         {
-            texto.text = "PAUSAR";       
+            texto.text = "PAUSAR";
+            textoMensaje.text = "";
             click = 0;
 
         }

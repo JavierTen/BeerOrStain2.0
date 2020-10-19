@@ -497,6 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeRemaining: 5
   texto: {fileID: 1223298216}
+  textoMensaje: {fileID: 689017845}
   Mensaje: {fileID: 244152478}
 --- !u!1 &1148402794
 GameObject:
