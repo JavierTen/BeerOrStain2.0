@@ -100,7 +100,7 @@ public class CartaJugador : MonoBehaviour
         try
         {
             string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-            string Query = "INSERT INTO bosdb.jugadortcarta(carta, idJugador, idPartida) VALUES('" + cartasJugador[nCarta].ToString() + "'," + DatosGlobales.IdJugador + "," + DatosGlobales.IdPartida + ");";
+            string Query = "INSERT INTO bosdb.rcregla(carta, idJugador, idPartida) VALUES('" + cartasJugador[nCarta].ToString() + "'," + DatosGlobales.IdJugador + "," + DatosGlobales.IdPartida + ");";
             conexion = new MySqlConnection(DataConecction);
             consola = new MySqlCommand(Query, conexion);
 
