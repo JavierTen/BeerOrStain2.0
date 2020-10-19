@@ -55,19 +55,19 @@ public class RMPJuego : MonoBehaviour
                         {
                             idAntiguo = idNuevo;
 
-                            string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-                            string Query = "SELECT * FROM bosdb.jugador WHERE idJugador = "+idJugador+"";
+                            string DataConecction2 = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
+                            string Query2 = "SELECT * FROM bosdb.jugador WHERE idJugador = "+idJugador+"";
 
-                            conexion = new MySqlConnection(DataConecction);
-                            consola = new MySqlCommand(Query, conexion);
+                            conexion2 = new MySqlConnection(DataConecction2);
+                            consola2 = new MySqlCommand(Query2, conexion2);
 
-                            conexion.Open();
-                            MySqlDataReader reader = consola.ExecuteReader();
-                            while (reader.Read())
+                            conexion2.Open();
+                            MySqlDataReader reader2 = consola2.ExecuteReader();
+                            while (reader2.Read())
                             {
-                                nombreJugador = reader["nombre"].ToString();
+                                nombreJugador = reader2["nombre"].ToString();
                             }
-
+                            conexion2.Close();
                             textoMensaje.text = "¡"+nombreJugador+ "tiene la carta actaul!";
                             Mensaje.SetActive(true);
                         }
