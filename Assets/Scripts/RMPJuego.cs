@@ -68,7 +68,7 @@ public class RMPJuego : MonoBehaviour
                                 nombreJugador = reader2["nombre"].ToString();
                             }
                             conexion2.Close();
-                            textoMensaje.text = "¡"+nombreJugador+ "tiene la carta actaul!";
+                            textoMensaje.text = "¡"+nombreJugador+ " tiene la carta actaul!";
                             Mensaje.SetActive(true);
                         }
                     }
