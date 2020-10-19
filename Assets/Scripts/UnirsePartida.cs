@@ -12,7 +12,7 @@ public class UnirsePartida : MonoBehaviour
     private MySqlCommand consola;
     public InputField partida;
     public InputField nick;
-    public float timeRemaining = 3;
+    public float timeRemaining = 0.5f;
     private bool gamerunning;
 
     string idPartida = "0";
@@ -27,7 +27,7 @@ public class UnirsePartida : MonoBehaviour
             }
             else
             {
-                timeRemaining = 1;
+                timeRemaining = 0.3f;
                 try
                 {
 

@@ -10,8 +10,9 @@ public class CPJugador : MonoBehaviour
     private MySqlCommand consola;
     private SpriteRenderer rend;
     private Sprite cartaC;
-    public float timeRemaining = 0.5f;
+    public float timeRemaining = 0.3f;
     private bool gamerunning;
+    
     void Update()
     {
         if (!gamerunning)
@@ -22,7 +23,7 @@ public class CPJugador : MonoBehaviour
             }
             else
             {
-                timeRemaining = 0.5f;
+                timeRemaining = 0.3f;
                 try
                 {
 

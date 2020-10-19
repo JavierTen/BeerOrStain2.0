@@ -12,6 +12,7 @@ public class RepartirCartas : MonoBehaviour
     private MySqlCommand consola;
     private MySqlConnection conexion2;
     private MySqlCommand consola2;
+    private int cantidadJugadores = 0;
     void Start()
     {
         cardspiramide.Add("B0");
@@ -192,8 +193,10 @@ try
                     conexion2.Open();
                     consola2.ExecuteReader();
                     conexion2.Close();
-                }           
+                } 
+                cantidadJugadores= cantidadJugadores+1;          
             }
+            DatosGlobales.CantidadJugadores = cantidadJugadores;
             conexion.Close();
         }
         catch (MySqlException ex)

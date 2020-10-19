@@ -48,6 +48,7 @@ public class RMPJuego : MonoBehaviour
                     {
                         idNuevo = reader["idjugadortcarta"].ToString();
                         idJugador = reader["idJugador"].ToString();
+                        
                     }
                     if (idNuevo != "")
                     {

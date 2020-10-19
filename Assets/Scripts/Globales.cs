@@ -12,5 +12,6 @@ public static class DatosGlobales {
  public static string NickUsuario { get; set; }
  public static string IdJugador { get; set; }
  public static string CartaActualPiramide { get; set; }
+ public static int CantidadJugadores { get; set; }
 
 }
