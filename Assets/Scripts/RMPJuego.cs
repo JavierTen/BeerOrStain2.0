@@ -70,7 +70,7 @@ public class RMPJuego : MonoBehaviour
                             }
                             conexion2.Close();
                             textoMensaje.text = "¡"+nombreJugador+ " tiene la carta actaul!";
-                            Mensaje.SetActive(true);
+                            
                         }
                     }
 

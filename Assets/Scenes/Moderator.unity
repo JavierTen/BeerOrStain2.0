@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb121ff92cb796b41a0168cd58a906da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 3
+  timeRemaining: 5
   texto: {fileID: 1223298216}
   Mensaje: {fileID: 244152478}
 --- !u!1 &1148402794
