@@ -166,6 +166,7 @@ public class RMCRegla : MonoBehaviour
                                                     Verdad[numeroR].ToString();
 
                             }
+                            
 
                         }
                     }
