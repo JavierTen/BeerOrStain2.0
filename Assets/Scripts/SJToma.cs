@@ -16,7 +16,7 @@ public class SJToma : MonoBehaviour
         try
         {
             string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-            string Query = "INSERT INTO bosdb.jugadortoma (jugadorToma,idjugadorEnv) VALUES ('"+nombreJugador.text+"',"+DatosGlobales.IdJugador+");";
+            string Query = "INSERT INTO bosdb.jugadortoma (jugadorToma,idjugadorEnv,idPartida) VALUES ('"+nombreJugador.text+"',"+DatosGlobales.IdJugador+","+DatosGlobales.IdPartida+");";
 
             conexion = new MySqlConnection(DataConecction);
             consola = new MySqlCommand(Query, conexion);

@@ -37,7 +37,7 @@ public class RMJToma : MonoBehaviour
                 {
 
                     string DataConecction = "Server=beerorstain20.mysql.database.azure.com; Port=3306; Database=bosdb; Uid=adminbos@beerorstain20; Pwd=*camaja20*; SslMode=Preferred;";
-                    string Query = "SELECT * FROM bosdb.jugadortoma WHERE idjugadortoma = " + DatosGlobales.IdPartida + " ORDER BY idjugadortoma DESC LIMIT 1;";
+                    string Query = "SELECT * FROM bosdb.jugadortoma WHERE idPartida = " + DatosGlobales.IdPartida + " ORDER BY idjugadortoma DESC LIMIT 1;";
 
                     conexion = new MySqlConnection(DataConecction);
                     consola = new MySqlCommand(Query, conexion);
