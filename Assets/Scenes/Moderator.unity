@@ -286,7 +286,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 752255635}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.46685955
+  m_Size: 0.4668662
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: sdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdfsdfdfdfdsafsfsdfsdf
+  m_Text: 
 --- !u!222 &335371765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -612,8 +612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeRemaining: 5
   texto: {fileID: 1223298216}
-  textoMensaje: {fileID: 0}
-  Mensaje: {fileID: 0}
+  textoMensaje: {fileID: 335371764}
+  Mensaje: {fileID: 2059451901}
 --- !u!1 &886790680
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,9 +957,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc62e56583e61c54fb03a9365fca4046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mensaje: {fileID: 0}
-  textoMensaje: {fileID: 0}
-  timeRemaining: 0.5
+  Mensaje: {fileID: 2059451901}
+  textoMensaje: {fileID: 335371764}
+  timeRemaining: 0.3
 --- !u!4 &1590933561
 Transform:
   m_ObjectHideFlags: 0
@@ -986,9 +986,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2eb31c982a5fe6479e2f6afccae3a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mensaje: {fileID: 0}
-  textoMensaje: {fileID: 0}
-  timeRemaining: 0.5
+  Mensaje: {fileID: 2059451901}
+  textoMensaje: {fileID: 335371764}
+  timeRemaining: 0.3
 --- !u!1 &1592475967
 GameObject:
   m_ObjectHideFlags: 0
